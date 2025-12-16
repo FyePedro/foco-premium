@@ -2,114 +2,78 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foco+ Premium</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
     }
-
-    .card {
-      background: #ffffff;
-      width: 100%;
-      max-width: 420px;
-      border-radius: 20px;
+    .box {
+      background: #111;
       padding: 30px;
+      max-width: 380px;
+      width: 100%;
+      border-radius: 16px;
       text-align: center;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.25);
-      animation: fadeIn 0.6s ease;
+      box-shadow: 0 15px 40px rgba(0,0,0,.6);
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
     h1 {
-      margin: 0;
+      margin-bottom: 10px;
       font-size: 26px;
     }
-
-    .badge {
-      display: inline-block;
-      background: #f5f7ff;
-      color: #5a67d8;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 13px;
-      margin: 12px 0 20px;
-      font-weight: 600;
-    }
-
-    .qr {
-      width: 230px;
-      border-radius: 16px;
-      margin: 20px 0;
-      border: 2px solid #eee;
-    }
-
     p {
-      color: #555;
-      font-size: 15px;
-      margin: 12px 0;
+      opacity: .85;
+      font-size: 14px;
     }
-
-    .btn {
-      display: block;
-      margin-top: 20px;
-      padding: 15px;
-      background: #25D366;
-      color: white;
+    img {
+      width: 220px;
+      margin: 20px auto;
       border-radius: 12px;
-      font-size: 16px;
-      font-weight: bold;
+    }
+    a.btn {
+      display: block;
+      background: #25D366;
+      color: #fff;
+      padding: 14px;
+      border-radius: 10px;
       text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 10px 25px rgba(37,211,102,0.4);
+      font-weight: bold;
+      margin-top: 20px;
+      transition: .3s;
     }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 15px 35px rgba(37,211,102,0.5);
+    a.btn:hover {
+      background: #1ebe5d;
     }
-
     .footer {
       margin-top: 15px;
       font-size: 12px;
-      color: #999;
+      opacity: .6;
     }
   </style>
 </head>
-
 <body>
 
-  <div class="card">
+  <div class="box">
     <h1>💎 Foco+ Premium</h1>
-    <div class="badge">Acesso Vitalício</div>
+    <p>Escaneie o QR Code para pagar via Pix</p>
 
-    <p>Escaneie o QR Code abaixo para pagar via Pix</p>
+    <img src="qrcode-pix.png" alt="QR Code Pix">
 
-    <img class="qr" src="qrcode-pix.png" alt="QR Code Pix">
+    <p>Após o pagamento, clique abaixo para receber seu código:</p>
 
-    <p>Após o pagamento, clique abaixo para receber seu código de ativação:</p>
-
-    <a
-      class="btn"
-      href="https://wa.me/5517991656885?text=Olá%2C%20quero%20meu%20código%20do%20Foco%2B"
-      target="_blank"
-    >
-      📲 Falar no WhatsApp
+    <a class="btn" href="https://wa.me/55SEUNUMEROAQUI?text=Olá,%20já%20paguei%20o%20Foco+%20Premium%20e%20quero%20meu%20código">
+      💬 Falar no WhatsApp
     </a>
 
     <div class="footer">
-      Pagamento seguro • Código enviado manualmente
+      Pagamento seguro • Liberação manual
     </div>
   </div>
 
